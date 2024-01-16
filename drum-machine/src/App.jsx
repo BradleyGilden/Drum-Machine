@@ -1,34 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="w-screen min-h-screen bg-slate-400 grid place-items-center">
+      <div id="drum-machine" className="bg-bg w-[min(50vh,95vw)] h-[50vh] rounded-3xl">
+        <div id="display" className='w-full h-[3rem] rounded-t-3xl border-bg border-4 bg-fg text-center font-inter font-semibold text-[1.5rem] leading-[2.5rem] text-bg'>Sound</div>
+        <div className='h-[calc(100%-3rem)] w-full p-2 flex flex-wrap gap-3 justify-center items-center'>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+          <div className='drum-pad bg-fg text-bg text-center h-1/4 w-1/4 rounded-full'></div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
