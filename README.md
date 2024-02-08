@@ -2,6 +2,8 @@
 
 A simple web based drum machine
 
+To view app visit [coma-drumpad.vercel.app](https://coma-drumpad.vercel.app/)
+
 ## Screenshots
 
 <p align="center">
